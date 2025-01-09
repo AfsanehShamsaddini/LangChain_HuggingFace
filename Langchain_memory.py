@@ -13,7 +13,8 @@ from langchain_core.chat_history import (
 from langchain_core.runnables.history import RunnableWithMessageHistory  
 
 load_dotenv(find_dotenv())  
-hf_token = os.environ.get("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")  
+hf_token = os.environ.get("HUGGINGFACEHUB_API_TOKEN")  
+# Get your token from here: https://huggingface.co/settings/tokens and set it in the .env file
 
 callbacks = [StreamingStdOutCallbackHandler()]  
 
